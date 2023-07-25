@@ -106,12 +106,18 @@ This project is licensed under the [${licenseText}](${licenseLink}).`;
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
     return `# ${data.appName || ''}
-  
+    
   ${renderLicenseBadge(data.license)}
   
   ## Table of Contents
   
-  [Description](#description) | [Installation](#installation) | [Usage](#usage) | [License](#license) | [Contributing](#contributing) | [Tests](#tests) | [Questions](#questions)
+  • [Description](#description)
+  • [Installation](#installation)
+  • [Usage](#usage)
+  • [License](#license)
+  • [Contributing](#contributing)
+  • [Tests](#tests)
+  • [Questions](#questions)
   
   ## Description
   
@@ -120,7 +126,9 @@ function generateMarkdown(data) {
   ## Installation
   
   ${data.installation || ''}
-  To install dependencies, use this/these command/s: ${data.installationCommand || ''}
+  To install dependencies, use this/these command/s: ${
+      data.installationCommand || ''
+    }
   
   ## Usage
   
@@ -139,7 +147,9 @@ function generateMarkdown(data) {
   
   ## Questions
   
-  If there are any questions, feel free to contact me through [Email](mailto:${data.email || ''}) or [GitHub](${data.github || ''})
+  If there are any questions, feel free to contact me through [Email](mailto:${
+      data.email || ''
+    }) or [GitHub](https://github.com/${data.github || ''})
   `;
   }
 
