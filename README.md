@@ -20,7 +20,7 @@ To use the README Generator, make sure you have [Node.js](https://nodejs.org/) i
 
 ## Walkthrough
 
-
+[Video Walkthrough](https://watch.screencastify.com/v/b2E9kZKj9XcQBEkpp9Wg)
 
 ## Features
 
